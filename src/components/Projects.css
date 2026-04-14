@@ -1,0 +1,18 @@
+.projects {
+  background-color: var(--color-bg);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-xl);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+  }
+}
